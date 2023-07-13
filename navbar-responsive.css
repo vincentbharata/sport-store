@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.logo > a > img {
+    width: 4rem;
+    height: 4rem;
+    
+}
+nav {
+    display : flex;
+    background-color: lightgray;
+    justify-content: space-around;
+    height: 70px;
+    align-items: center;
+    
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width : 40%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color :black;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+/*hamburger*/
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+.menu-toggle input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -9px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+
+}
+
+
+/*ukuran tablet*/
+@media screen and (max-width:768px){
+    nav ul {
+        width: 50%;
+    }
+}
+
+/*ukuran hp*/
+@media screen and (max-width:576px){
+    .menu-toggle{
+        display: flex;
+    }
+    nav ul {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 80%;
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: lightgray;
+        z-index: -1;
+        transform: translateX(100%);
+        transition:  all 1s;
+        opacity: 0;
+    }
+    nav ul.slide {
+        opacity: 1;
+        transform : translateX(0);
+    }
+}

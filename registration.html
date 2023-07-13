@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Product Form</title>
+    <link rel="stylesheet" href="styleregist.css">
+    <link rel="icon" type="logo" href="Assets/Logo.png"/>
+    <script src="scriptregis.js" defer></script>
+    <script src="navbar-responsive.js"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="Assets/Logo.png" alt="header logo"></a>
+        </div>
+        
+        <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shoes.html">Shoes</a>
+                        <ul>
+    
+                            <li><a href="nike.html">Nike</a></li>
+                            <li><a href="adidas.html">Adidas</a></li>
+                            <li><a href="puma.html">Puma</a></li>
+                            <li><a href="ua.html">Under Armor</a></li>
+                        </ul>
+                    <li><a href="accessories.html">Accessories</a></li>
+                    <li><a href="registration.html">Purchase Product</a></li>
+    
+        </ul>
+        
+        <div class="menu-toggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        </nav>
+
+    <div class="barrier">
+        <!-- sement      -->
+    </div>
+
+    <form action="afterpurchase.html" id="myform">
+        <div class="inn">
+            <div class="title">
+                Purchase Product Confirmation
+            </div>
+            <div class="form"> 
+                <div class="input">
+                    <label>Full Name</label> <!--udah-->
+                    <input type="text" name="FNinput" class="input2">
+                </div>
+                <div class="input">
+                    <label>Phone Number</label> <!--udah-->
+                    <input type="text" name="phoneNum" class="input2">
+                </div>
+                <div class="input">
+                    <label>Email</label> <!--udah-->
+                    <input type="text" name="email" class="input2">
+                </div>
+                <div class="input">
+                    <label>Gender</label> <!--udah-->
+
+                        <input class="gen" type="radio" name="Gender" value="male" id="male">Male
+                        <!-- <label for="male"></label> -->
+                        <input class="gen" type="radio" name="Gender" value="female" id="female">female
+                        <!-- <label for="female"></label> -->
+                        <input class="gen" type="radio" name="Gender" value="ui" id="ui">Unidentified
+                        <!-- <label for="ui"></label> -->
+                    <!-- <div class="radiocontainer">
+                        <input type="radio" id="male" name="os"/>
+                        <label for="male">Male</label>
+
+                        <input type="radio" id="female" name="os"/>
+                        <label for="female">female</label>
+                        
+                        <input type="radio" id="ui" name="os"/>
+                        <label for="ui">Unidentified</label>                    
+                    </div> -->
+                </div>
+                <div class="input">
+                    <label>Age</label> <!--udah-->
+                    <input type="text" name="ageNum" class="input2">
+                </div>
+                <div class="input">
+                    <label>District</label>
+                    <div class="provincy">
+                        <select name="SelPro">
+                            <option value="Banten">Banten</option>
+                            <option value="DKI Jakarta">DKI Jakarta</option>
+                            <option value="Jawa Barat">Jawa Barat</option>
+                            <option value="Jawa Timur">Jawa Timur</option>
+                            <option value="Jawa Tengah">Jawa Tengah</option>
+                            <option value="Yogyakarta">DI Yogyakarta</option>
+                            <option value="Bali">Bali</option>
+                            <option value="Kalimantan Timur">Kalimantan Timur</option>
+                            <option value="Kalimantan Barat">Kalimantan Barat</option>
+                            <option value="Sulawesi Utara">Sulawesi Utara</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input">
+                    <label>Address</label> <!--udah-->
+                    <textarea class="add2" name="AdLoc"></textarea>
+                </div>
+                <div class="input">
+                    <label>Postal Code</label> <!--udah-->
+                    <input type="text" name="PosNum" class="input2">
+                </div>
+                <div class="input"> <!--udah-->
+                    <label>Additional Notes</label>
+                    <textarea class="add2" name="AddNotes"></textarea>
+                </div>
+                <div class="input terms"> <!--udah-->
+                    <label class="verif">
+                        <input type="checkbox" value="ok" name="agree">
+                        <span class="checkmark"></span>
+                    </label>
+                    <p>Agreed to terms and conditions</p>
+                </div>
+                <div id="merror">
+                    <!-- ini buat error -->
+                    <p id="errorMessage"></p>
+                </div>
+                <div class="inputfield">
+                    <!-- <input type="submit" value="Submit" class="btn"> -->
+                        <button type="submit" class="btn">
+                            Submit
+                        </button>
+                </div>
+            </div>
+        </div>
+    </form>   
+  
+</body>
+</html>
